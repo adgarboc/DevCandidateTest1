@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DevCandidateTest1.Models
 {
@@ -28,9 +26,9 @@ namespace DevCandidateTest1.Models
 
         internal void Comprar()
         {
-            if (Items.Count < 1)
+            if (ObtenerCantidadItems() < 1)
             {
-                Console.WriteLine($"Your Cart is Empty");
+                Console.WriteLine("Your cart is empty");
                 return;
             }
             FechaCompra = DateTime.Now;
