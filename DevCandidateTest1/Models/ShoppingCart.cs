@@ -9,7 +9,7 @@ namespace DevCandidateTest1.Models
     internal class ShoppingCart
     {
         public DateTime FechaCompra { get; set; }
-        public Item Items  { get; set; }
+        public List<Item> Items  { get; set; }
         public decimal TotalCompra { get; set; }
     }
 }
